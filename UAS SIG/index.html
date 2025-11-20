@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS UAS SIG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .card-custom {
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+
+        .profile-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .title-main {
+            color: #333;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .biodata-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+
+        .biodata-title {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .biodata-row {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .biodata-row:last-child {
+            border-bottom: none;
+        }
+
+        .biodata-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .biodata-value {
+            color: #666;
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            padding: 12px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-custom:active {
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 576px) {
+            .title-main {
+                font-size: 2rem;
+            }
+            
+            .profile-circle {
+                width: 120px;
+                height: 120px;
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card card-custom">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="profile-circle">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+
+                        <h1 class="title-main text-center mb-2">TUGAS UAS SIG</h1>
+                        <p class="subtitle text-center mb-4">WebGIS Persebaran Industri Kecil</p>
+
+                        <p class="description mb-4">
+                            Ini merupakan tugas UAS SIG yaitu membuat webgis sesuai tema yang dipilih. Disini saya memilih tema Persebaran Industri Kecil yang ada di Kecamatan Blimbing. Peta ini mencakup Titik Lokasi beberapa Industri Kecil, Batas Area Kecamatan Blimbing, Jalan Raya, Jalan Gang, Jalan Perumahan, Persawahan, dan Ladang Terbuka Hijau.
+                        </p>
+
+                        <div class="biodata-section p-4 mb-4">
+                            <h2 class="biodata-title h4 mb-4">
+                                <i class="fas fa-user-circle me-2"></i>Profil
+                            </h2>
+                            
+                            <div class="row biodata-row py-3">
+                                <div class="col-4 col-md-3">
+                                    <span class="biodata-label">Nama</span>
+                                </div>
+                                <div class="col-8 col-md-9">
+                                    <span class="biodata-value">Mochammad Aira Bintang Andrian</span>
+                                </div>
+                            </div>
+
+                            <div class="row biodata-row py-3">
+                                <div class="col-4 col-md-3">
+                                    <span class="biodata-label">NIM</span>
+                                </div>
+                                <div class="col-8 col-md-9">
+                                    <span class="biodata-value">23201199</span>
+                                </div>
+                            </div>
+
+                            <div class="row biodata-row py-3">
+                                <div class="col-4 col-md-3">
+                                    <span class="biodata-label">Prodi</span>
+                                </div>
+                                <div class="col-8 col-md-9">
+                                    <span class="biodata-value">Teknik Informatika</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-custom" onclick="window.location.href='asset/qgis2web_2025_11_20-23_56_28_819318/index.html'">
+                                <i class="fas fa-map me-2"></i>Lihat Peta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
